@@ -108,5 +108,7 @@ a {
           color: #7f7f7f;
           font-size: 14px;
           line-height: 21px; }
+          .section-latest-posts .biz-is .videos .item h4 a:hover {
+            color: #727576; }
 
 /*# sourceMappingURL=main.css.map */
