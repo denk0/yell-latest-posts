@@ -14,17 +14,18 @@ body
 a
 	text-decoration: none 
 .container
-	max-width: 1110px
+	width: 1090px
 	margin-left: auto
 	margin-right: auto
-	padding: 0 10px 
 .section-latest-posts
 	padding: 30px 0 20px
+	background-color: #FFF 
 	.section-title
 		color: $header-color
 		font-size: 27px
-		float: left
 		line-height: 1.2
+	.section-title--float
+		float: left
 	.section-read-more
 		float: right
 		display: inline-block
@@ -35,7 +36,7 @@ a
 		&:hover
 			color: $header-color
 	.latest-posts
-		margin-top: 30px
+		margin: 30px 0
 		.post
 			width: 32%
 			float: left
@@ -69,25 +70,47 @@ a
 						display: inline-block
 			& + .post		
 				margin-left: 2%
-
-@media (max-width: 510px)
-	.section-latest-posts
-		.section-title
-			float: none
+	.biz-benefits
+		.benefits
+			margin: 30px 0
+			.item
+				float: left
+				width: 198px
+				.top
+					height: 135px
+					position: relative
+					background-color: #F3F4F5 
+					img
+						position: absolute
+						display: inline-block
+						top: 50%
+						left: 50%
+						-webkit-transform: translate(-50%,-50%) 
+						-moz-transform: translate(-50%,-50%) 
+						-ms-transform: translate(-50%,-50%) 
+						-o-transform: translate(-50%,-50%) 
+						transform: translate(-50%,-50%) 
+				& + .item
+					margin-left: 25px
+				.bottom
+					width: 80%
+					margin: 15px auto 0
+					text-align: center
+					font-size: 14px
+					line-height: 21px
+					color: $text-color
+	.biz-is
+		.videos
 			text-align: center
-		.section-read-more
-			text-align: center
-			float: none
-			display: block
-			margin-top: 20px
-							
-@media (max-width: 768px)
-	.section-latest-posts
-		.latest-posts
-			.post
-				width: 100%
-				float: none
-				& + .post		
-					margin-left: 0
+			.item
+				width: 260px
+				display: inline-block
+				margin: 30px 4.7px 0
+				h4
 					margin-top: 10px
+					text-align: left
+					a
+						color: $text-color
+						font-size: 14px
+						line-height: 21px
 						

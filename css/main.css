@@ -11,18 +11,19 @@ a {
   text-decoration: none; }
 
 .container {
-  max-width: 1110px;
+  width: 1090px;
   margin-left: auto;
-  margin-right: auto;
-  padding: 0 10px; }
+  margin-right: auto; }
 
 .section-latest-posts {
-  padding: 30px 0 20px; }
+  padding: 30px 0 20px;
+  background-color: #FFF; }
   .section-latest-posts .section-title {
     color: #727576;
     font-size: 27px;
-    float: left;
     line-height: 1.2; }
+  .section-latest-posts .section-title--float {
+    float: left; }
   .section-latest-posts .section-read-more {
     float: right;
     display: inline-block;
@@ -33,7 +34,7 @@ a {
     .section-latest-posts .section-read-more:hover {
       color: #727576; }
   .section-latest-posts .latest-posts {
-    margin-top: 30px; }
+    margin: 30px 0; }
     .section-latest-posts .latest-posts .post {
       width: 32%;
       float: left; }
@@ -66,22 +67,46 @@ a {
             display: inline-block; }
       .section-latest-posts .latest-posts .post + .post {
         margin-left: 2%; }
-
-@media (max-width: 510px) {
-  .section-latest-posts .section-title {
-    float: none;
+  .section-latest-posts .biz-benefits .benefits {
+    margin: 30px 0; }
+    .section-latest-posts .biz-benefits .benefits .item {
+      float: left;
+      width: 198px; }
+      .section-latest-posts .biz-benefits .benefits .item .top {
+        height: 135px;
+        position: relative;
+        background-color: #F3F4F5; }
+        .section-latest-posts .biz-benefits .benefits .item .top img {
+          position: absolute;
+          display: inline-block;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+      .section-latest-posts .biz-benefits .benefits .item + .item {
+        margin-left: 25px; }
+      .section-latest-posts .biz-benefits .benefits .item .bottom {
+        width: 80%;
+        margin: 15px auto 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        color: #7f7f7f; }
+  .section-latest-posts .biz-is .videos {
     text-align: center; }
-  .section-latest-posts .section-read-more {
-    text-align: center;
-    float: none;
-    display: block;
-    margin-top: 20px; } }
-@media (max-width: 768px) {
-  .section-latest-posts .latest-posts .post {
-    width: 100%;
-    float: none; }
-    .section-latest-posts .latest-posts .post + .post {
-      margin-left: 0;
-      margin-top: 10px; } }
+    .section-latest-posts .biz-is .videos .item {
+      width: 260px;
+      display: inline-block;
+      margin: 30px 4.7px 0; }
+      .section-latest-posts .biz-is .videos .item h4 {
+        margin-top: 10px;
+        text-align: left; }
+        .section-latest-posts .biz-is .videos .item h4 a {
+          color: #7f7f7f;
+          font-size: 14px;
+          line-height: 21px; }
 
 /*# sourceMappingURL=main.css.map */
